@@ -9,14 +9,16 @@ header {
 
 	position: absolute;
 	top: 50%;
-	left: 50%;
+	//left: 50%;
 }
 
 h1 {
+	/*
 	background-color: green;
 	background-image: url("http://www.w3schools.com/css/img_tree.png");
 	background-repeat: no-repeat;
 	background-position:50% 20%;
+	*/
 	padding:20px 40px 60px 80px;
 	border: 4px solid pink;
 	border-radius: 10px;
@@ -32,15 +34,21 @@ h1 {
 }
 
 h2 {
-	transition: transform 2s ease-in-out;
-	background: red;
-	transform: rotateY(10deg);
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-animation: myfirst 10s ease-in 2s infinite; /* Chrome, Safari, Opera */
 }
 
-h2:hover {
-	background: blue;
-	transform: rotateY(170deg);
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0% {background: pink; margin-left:0; transform: rotateX(0deg) scale(1);}
+    10% {background: yellow; margin-left:10px; transform: rotateX(10deg) scale(4);}
+    50% {background: blue; margin-left:50px; transform: rotateX(90deg) scale(2);}
+    100% {background: green; margin-left:100px; transform: rotateX(180deg) scale(1);}
 }
+
+
 
 p {
 	position: absolute;
@@ -90,4 +98,5 @@ a:active {
     	background-color: red;
     }
 }
+
 
