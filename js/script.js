@@ -8,8 +8,7 @@ $(document).ready(function(){
 
 
   $(".my1a").click(function(){
-  	$("#myul").hide();
-  	$("h2").addClass("animate");
+  	$(".my1p").removeClass("my1p").addClass("my2p");
   });
 
 });
