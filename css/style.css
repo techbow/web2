@@ -1,7 +1,6 @@
 body {
 	margin:0;
 	font-size:100%;
-	background-color: yellow;
 }
 
 header {
@@ -37,7 +36,11 @@ h2 {
     width: 100px;
     height: 100px;
     background: red;
-    -webkit-animation: myfirst 10s ease-in 2s infinite; /* Chrome, Safari, Opera */
+    /* Chrome, Safari, Opera */
+}
+
+h2.animate {
+	-webkit-animation: myfirst 10s ease-in 2s infinite; 
 }
 
 /* Chrome, Safari, Opera */
